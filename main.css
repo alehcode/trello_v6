@@ -1,0 +1,123 @@
+body{
+	background-image: url("fondo.png");
+	margin-top: 90px;
+	margin-left: 20px;
+}
+.formularioOcultar{
+	display: none;
+}
+.spanListaClase{
+
+}
+.contenedor{
+	display: inline-block;
+}
+.titulo {
+	display: block;
+	float: left;
+	background-color: #E2E4E6;
+	width: 275px;
+	border-radius: 5px;
+	padding-top:  10px;
+	padding-left:  10px;
+	font-weight: bold;
+	margin-left: 5px;
+	margin-top: 10px;
+	color: #6C6D6D;
+	font-family: helvetica;
+	font-size: 14px;
+}
+
+#spanLista{
+	color: #B9A8C3;
+	background-color: #79558B;
+	width: 270px;
+	height: 20px;
+	border-radius: 5px;
+	padding: 10px 10px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px;
+	vertical-align: top;
+}
+#formulario{
+	background-color: #E2E4E6;
+	width: 280px;
+	height: 75px;
+	padding: 5px 5px 5px 5px;
+	border-radius: 5px;
+	margin-left: -11px;
+	margin-top: -10px;
+	float: left;
+	margin-left: 5px;
+	margin-top: 10px; 
+	vertical-align: top;
+
+}
+#guardar{
+	background-color: #5CB147;
+	color:white;
+	border-radius: 7px;
+	height: 35px;
+	width: 100px;
+	font-size: 14px;
+	font-weight: bold;
+}
+#textoInput{
+	background-color: #D7D9DB;
+	height: 35px;
+	width: 268px;
+	border-radius: 5px;
+	border-color: #AAAAAA;
+	font-size: 14px;
+	padding-left: 5px;
+	font-family: helvetica;
+    font-size: 14px;
+}
+.anadirTarea{
+	background-color: #E2E4E6;
+    width: 276px;
+    height: 25px;
+    margin-top: 18px;
+    margin-left: -9px;
+    padding-left: 8px;
+    padding-top: 6px;
+    border-radius: 5%;
+    font-weight: initial;
+    font-family: helvetica;
+    font-size: 14px;
+
+    
+}
+.anadirTarea:hover{
+	background-color: #CCCDCE;
+	text-decoration: underline;
+}
+.textareaTarjeta{
+	width: 259px;
+	height: 70px;
+	margin-top: 5px;
+	margin-bottom: 5px;
+	background-color: white;
+}
+.botonAnadir{
+	background-color: #5CB147;
+	color:white;
+	border-radius: 7px;
+	height: 30px;
+	width: 80px;
+	font-size: 14px;
+	font-weight: bold;
+	margin-bottom: 7px; 
+}
+.mensajeTarea{
+	background-color: white;
+	width: 250px;
+    padding: 7px;
+    margin-top: 10px;
+    font-weight: initial;
+    border-radius: 5px;
+}
+.ocultar{
+	display: none;
+}
