@@ -6,12 +6,17 @@
 		<link rel="stylesheet" type="text/css" href="main.css">
 	</head>
 	<body>
-		<div id="contenedorTrello">
+		<header>
+			<div class="header">
+				<img id = "logo" src="trello.png">
+			</div>	
+		</header>
+		<div id="contenedorTrello" class="scroll">
 			<div id="contenedorForm">
 				<span id="spanLista" class="spanOcultar">Añadir lista...(hazle click al nombre)</span>
 				<form id="formulario" class="formularioOcultar">
 					<input id="textoInput" type="text" name="" placeholder="Añadir lista..."><br>
-					<button id="guardar" type="submit">Guardar</button>
+					<button id="guardar" type="submit" disabled="true">Guardar</button>
 					<a id="cerrar" href="#">X</a>
 				</form>
 			</div>	

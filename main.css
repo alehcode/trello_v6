@@ -1,20 +1,44 @@
 body{
-	background-image: url("fondo.png");
-	margin-top: 90px;
-	margin-left: 20px;
+	background-color:#89609E;
+	margin-top: 0px;
+	margin-left: 0px;
+
+
+}
+#contenedorTrello{
+	margin-left: 30px;
+}
+header{
+	background-color: #755287;
+	width: 100%;
+	text-align: center;
+	height: 50px;
+	margin-bottom: 30px;
+	
+
+}
+img{
+	margin-top: 10px;
+	width: 100px;
+	height: 30px;
+	position: fixed;
+	background-color: #755287;
+
+}
+#logo{
+	position: fixed;
 }
 .formularioOcultar{
 	display: none;
 }
-.spanListaClase{
-
+.scroll{
+	white-space: nowrap;
 }
 .contenedor{
 	display: inline-block;
 }
 .titulo {
-	display: block;
-	float: left;
+	display: inline-block;
 	background-color: #E2E4E6;
 	width: 275px;
 	border-radius: 5px;
@@ -25,8 +49,10 @@ body{
 	margin-top: 10px;
 	color: #6C6D6D;
 	font-family: helvetica;
-	font-size: 14px;
+	white-space: normal;
+	vertical-align: top;
 }
+
 
 #spanLista{
 	color: #B9A8C3;
@@ -35,22 +61,18 @@ body{
 	height: 20px;
 	border-radius: 5px;
 	padding: 10px 10px;
-	float: left;
-	margin-left: 5px;
-	margin-top: 10px;
+	margin:-10px;
 	vertical-align: top;
 }
 #formulario{
 	background-color: #E2E4E6;
-	width: 280px;
+	width: 287px;
 	height: 75px;
 	padding: 5px 5px 5px 5px;
 	border-radius: 5px;
-	margin-left: -11px;
 	margin-top: -10px;
-	float: left;
-	margin-left: 5px;
-	margin-top: 10px; 
+	
+	
 	vertical-align: top;
 
 }
@@ -109,6 +131,7 @@ body{
 	font-size: 14px;
 	font-weight: bold;
 	margin-bottom: 7px; 
+	
 }
 .mensajeTarea{
 	background-color: white;
@@ -117,6 +140,7 @@ body{
     margin-top: 10px;
     font-weight: initial;
     border-radius: 5px;
+    word-break: break-all;
 }
 .ocultar{
 	display: none;

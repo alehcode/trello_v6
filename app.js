@@ -11,8 +11,22 @@ window.addEventListener("load", function() {
 		spanLista.classList.add("formularioOcultar");
 		formulario.classList.remove("formularioOcultar");
 		textoInput.focus();
+
+
 	});
 
+	textoInput.addEventListener("keyup", validacion);
+
+		function validacion(){
+			var valor = textoInput.value.length
+			if ( valor <= 0 ){
+				botonGuardar.disabled=true
+			} else if ( valor >= 1){
+				botonGuardar.disabled=false
+			}
+
+		}
+	
 	botonGuardar.addEventListener("click", cajaFormulario );
 
 	function cajaFormulario(e){
@@ -26,13 +40,13 @@ window.addEventListener("load", function() {
 		textoInput.value="";
 		contenedorForm.classList.add("titulo");
 
-
 		var contenedor = document.createElement("div");
 		contenedor.classList.add("titulo");
 		contenedor.insertBefore(spanLista, contenedor.childNodes[0]);
 		contenedor.insertBefore(formulario, contenedor.childNodes[1]);
 		contenedorTrello.appendChild(contenedor);
 
+// 
 		var anadirTarea = document.createElement("div");
 		anadirTarea.classList.add("anadirTarea");
 		anadirTarea.innerText = "Añadir nueva tarea";
@@ -40,6 +54,7 @@ window.addEventListener("load", function() {
 
 		anadirTarea.addEventListener("click", tarjetaForm);
 
+				
 		function tarjetaForm(e){
 			e.preventDefault();
 			anadirTarea.classList.add("ocultar");
@@ -51,6 +66,7 @@ window.addEventListener("load", function() {
 			textareaTarjeta.classList.add("textareaTarjeta");
 			botonAnadir.classList.add("botonAnadir");
 			botonAnadir.textContent = "Añadir";
+						
 
 			contenedorTarea.insertBefore(textareaTarjeta,contenedorTarea.childNodes[0]);
 			contenedorTarea.insertBefore(botonAnadir,contenedorTarea.childNodes[1]);
